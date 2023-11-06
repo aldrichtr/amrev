@@ -1,7 +1,7 @@
 version: 5
 dev:
     enablePreviewV2: true
-    enableSelfContainedVaults: true
+    enableSelfContainedVaults: false 
 commands:
     lookup:
         note:
@@ -23,13 +23,12 @@ commands:
 workspace:
     vaults:
         -
-            fsPath: .
+            fsPath: notes
             name: amrev
             sync: sync
             remote:
               type: git
               url: git@github.com/aldrichtr/amrev.git
-            selfContained: true
     journal:
         dailyDomain: daily
         name: log
